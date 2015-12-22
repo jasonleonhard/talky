@@ -1,6 +1,9 @@
+<div class="container">
+
 <% @posts.each do |post| %>
   <h1> <%= post.title %> </h1>
   <h4> <%= post.description %> </h4>
   <h4> <%= link_to "show", post_path(post) %> </h4>
 <% end %>
 
+</div>
