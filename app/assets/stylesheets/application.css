@@ -16,3 +16,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "slate"; 
+
+/* change first column 100% width to custom */
+.table {
+  width: auto !important;
+  padding: 5px;
+}
+
