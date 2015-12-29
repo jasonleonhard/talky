@@ -18,13 +18,14 @@
 
 /*https://github.com/maxim/bootswatch-rails*/
 /*Changing themes requires variables and bootswatch itself*/
-  /*Import cerulean variables*/
+/* prefer: slate, journal, superhero*/
+
   /*@import "bootswatch/cerulean/variables";*/
   /*@import "bootswatch/Amelia/variables";*/
   /*@import "bootswatch/Cerulean/variables";*/
   /*@import "bootswatch/Cosmo/variables";*/
   /*@import "bootswatch/Cyborg/variables";*/
-  @import "bootswatch/Darkly/variables";
+  /*@import "bootswatch/Darkly/variables";*/
   /*@import "bootswatch/Flatly/variables";*/
   /*@import "bootswatch/Journal/variables";*/
   /*@import "bootswatch/Lumen/variables";*/
@@ -34,7 +35,7 @@
   /*@import "bootswatch/Simplex/variables";*/
   /*@import "bootswatch/Slate/variables";*/
   /*@import "bootswatch/Spacelab/variables";*/
-  /*@import "bootswatch/Superhero/variables";*/
+  @import "bootswatch/Superhero/variables";
   /*@import "bootswatch/United/variables";*/
   /*@import "bootswatch/yeti/variables";*/
   
@@ -50,7 +51,7 @@
   /*@import "bootswatch/Cerulean/bootswatch";*/
   /*@import "bootswatch/Cosmo/bootswatch";*/
   /*@import "bootswatch/Cyborg/bootswatch";*/
-  @import "bootswatch/Darkly/bootswatch";
+  /*@import "bootswatch/Darkly/bootswatch";*/
   /*@import "bootswatch/Flatly/bootswatch";*/
   /*@import "bootswatch/Journal/bootswatch";*/
   /*@import "bootswatch/Lumen/bootswatch";*/
@@ -60,16 +61,15 @@
   /*@import "bootswatch/Simplex/bootswatch";*/
   /*@import "bootswatch/Slate/bootswatch";*/
   /*@import "bootswatch/Spacelab/bootswatch";*/
-  /*@import "bootswatch/Superhero/bootswatch";*/
+  @import "bootswatch/Superhero/bootswatch";
   /*@import "bootswatch/United/bootswatch";*/
   /*@import "bootswatch/yeti/bootswatch";*/
 /*if failing restart server*/
 
-
-  /*Whatever application styles you have go last*/
+  /*or just import a css file from /app/assets/stylesheets/ */
   /*@import "slate";*/
 
-
+/*CUSTOM CSS SECTION*/
 /* change first column 100% width to custom */
 .table {
   width: auto !important;
