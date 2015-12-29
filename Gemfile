@@ -6,6 +6,8 @@ gem 'rails', '4.2.4'
 # gem 'sqlite3'
 # heroku req pg
 gem 'pg'
+gem 'rails_12factor', group: :production
+
 # gem 'mysql2', '~> 0.3.18'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -49,5 +51,6 @@ group :development do
   gem 'spring'
 end
 
+ruby "2.2.0"
 
 
