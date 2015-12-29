@@ -1,0 +1,79 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+  @import "bootstrap-sprockets";
+
+/*https://github.com/maxim/bootswatch-rails*/
+/*Changing themes requires variables and bootswatch itself*/
+  /*Import cerulean variables*/
+  /*@import "bootswatch/cerulean/variables";*/
+  /*@import "bootswatch/Amelia/variables";*/
+  /*@import "bootswatch/Cerulean/variables";*/
+  /*@import "bootswatch/Cosmo/variables";*/
+  /*@import "bootswatch/Cyborg/variables";*/
+  @import "bootswatch/Darkly/variables";
+  /*@import "bootswatch/Flatly/variables";*/
+  /*@import "bootswatch/Journal/variables";*/
+  /*@import "bootswatch/Lumen/variables";*/
+  /*@import "bootswatch/Paper/variables";*/
+  /*@import "bootswatch/Readable/variables";*/
+  /*@import "bootswatch/Sandstone/variables";*/
+  /*@import "bootswatch/Simplex/variables";*/
+  /*@import "bootswatch/Slate/variables";*/
+  /*@import "bootswatch/Spacelab/variables";*/
+  /*@import "bootswatch/Superhero/variables";*/
+  /*@import "bootswatch/United/variables";*/
+  /*@import "bootswatch/yeti/variables";*/
+  
+  /*Then bootstrap itself*/
+  @import "bootstrap";
+
+  /*Bootstrap body padding for fixed navbar*/
+  body { padding-top: 60px; }
+
+  /*And finally bootswatch style itself*/
+  /*@import "bootswatch/cerulean/bootswatch";*/
+  /*@import "bootswatch/Amelia/bootswatch";*/
+  /*@import "bootswatch/Cerulean/bootswatch";*/
+  /*@import "bootswatch/Cosmo/bootswatch";*/
+  /*@import "bootswatch/Cyborg/bootswatch";*/
+  @import "bootswatch/Darkly/bootswatch";
+  /*@import "bootswatch/Flatly/bootswatch";*/
+  /*@import "bootswatch/Journal/bootswatch";*/
+  /*@import "bootswatch/Lumen/bootswatch";*/
+  /*@import "bootswatch/Paper/bootswatch";*/
+  /*@import "bootswatch/Readable/bootswatch";*/
+  /*@import "bootswatch/Sandstone/bootswatch";*/
+  /*@import "bootswatch/Simplex/bootswatch";*/
+  /*@import "bootswatch/Slate/bootswatch";*/
+  /*@import "bootswatch/Spacelab/bootswatch";*/
+  /*@import "bootswatch/Superhero/bootswatch";*/
+  /*@import "bootswatch/United/bootswatch";*/
+  /*@import "bootswatch/yeti/bootswatch";*/
+/*if failing restart server*/
+
+
+  /*Whatever application styles you have go last*/
+  /*@import "slate";*/
+
+
+/* change first column 100% width to custom */
+.table {
+  width: auto !important;
+  padding: 5px;
+}
+
+a:link { text-decoration: none !important; }
