@@ -54,5 +54,3 @@ group :development do
 end
 
 ruby "2.2.0"
-
-
