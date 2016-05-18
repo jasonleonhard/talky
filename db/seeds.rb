@@ -1,7 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'ffaker'
+	post = Post.new
+
+11.times do
+  post = Post.new
+  post.title = FFaker::HipsterIpsum.sentence(4)
+  post.description = FFaker::HipsterIpsum.paragraph
+  post.save!
+end
+puts post.inspect

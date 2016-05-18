@@ -6,7 +6,7 @@
       <tr>
         <th class="table table-striped table-bordered table-hover">Title</th>
         <th class="table table-striped table-bordered table-hover">Description</th>
-        <th class="table table-striped table-bordered table-hover">           </th>
+        <!-- <th class="table table-striped table-bordered table-hover">           </th> -->
         <!-- <th colspan="3"></th> -->
       </tr>
     </thead>
@@ -16,9 +16,14 @@
         <tr>
           <td class="table table-striped table-bordered table-hover"><%= post.title %></td>
           <td class="table table-striped table-bordered table-hover"><%= post.description %></td>
-          <td class="table table-striped table-bordered table-hover btn btn-xs btn-default"><%= link_to 'Show', post %></td>
-          <td class="table table-striped table-bordered table-hover btn btn-xs btn-default"><%= link_to 'Edit', edit_post_path(post) %></td>
-          <td class="table table-striped table-bordered table-hover btn btn-xs btn-default"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+              <td class="btn-xs btn-default">
+                  <a><%= link_to 'Show', post %></a> </td>
+              <td class="btn-xs btn-default">
+                  <a><%= link_to 'Edit', edit_post_path(post) %></a> </td>
+              <td class="btn-xs btn-default">
+                  <a><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></a> </td>
+
         </tr>
       <% end %>
     </tbody>
@@ -27,4 +32,3 @@
   <%= link_to 'New post', new_post_path, class: "btn btn-default" %>
 
 </div>
-
